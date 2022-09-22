@@ -69,9 +69,6 @@ export default function Home() {
       label: 'Talent Protocol',
       url: "https://talentprotocol.com/",
       textClassName: "text-primary font-bold"
-    },
-    {
-      label: 'TVL Dashboard',
     }
   ];
 
@@ -84,7 +81,7 @@ export default function Home() {
       </Head>
 
       <main className="flex-column">
-        <div className="flex justify-content-center align-items-center p-2 background-primary border-bottom-1 border-light">
+        <div className="flex justify-content-center align-items-center p-2 background-primary border-bottom-1 border-primary -mx-2">
           <ul className="flex" style={{paddingInlineStart: 0}}>
             {menubarItems.map((item) => (
               <li className="mx-3" key={`menuitem-${item.label}`}>
@@ -97,9 +94,9 @@ export default function Home() {
           </ul>
         </div>
         <div className="grid my-4 md:my-8">
-          <div className="col-12 md:col-6 md:pl-6 md:pr-5 md:pb-5">
-            <div className="background-primary border-primary p-3 border-1 border-50 border-round">
-              <div className="flex justify-content-between mb-3">
+          <div className="col-12 md:col-6 md:pl-6 md:pr-3 md:pb-5">
+            <div className="background-primary border-primary p-3 md:p-5 border-1 border-50 border-round-3xl">
+              <div className="flex justify-content-between">
                 <div>
                   <span className="block text-500 font-medium mb-3">Total Value Locked</span>
                   <div className="text-900 font-medium text-xl">{tvl()}</div>
@@ -110,9 +107,9 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="col-12 md:col-6 md:pr-6 md:pl-5 md:pb-5">
-            <div className="background-primary border-primary p-3 border-1 border-50 border-round">
-              <div className="flex justify-content-between mb-3">
+          <div className="col-12 md:col-6 md:pr-6 md:pl-3 md:pb-5">
+            <div className="background-primary border-primary p-3 md:p-5 border-1 border-50 border-round-3xl">
+              <div className="flex justify-content-between">
                 <div>
                   <span className="block text-500 font-medium mb-3">Total Active Stakes</span>
                   <div className="text-900 font-medium text-xl">{totalActiveStakes()}</div>
@@ -123,9 +120,9 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="col-12 md:col-6 md:pl-6 md:pr-5 md:pb-5">
-            <div className="background-primary border-primary p-3 border-1 border-50 border-round">
-              <div className="flex justify-content-between mb-3">
+          <div className="col-12 md:col-6 md:pl-6 md:pr-3 md:pb-5">
+            <div className="background-primary border-primary p-3 md:p-5 border-1 border-50 border-round-3xl">
+              <div className="flex justify-content-between">
                 <div>
                   <span className="block text-500 font-medium mb-3">Staked TAL (CELO)</span>
                   <div className="text-900 font-medium text-xl">{data["celo"]["stakedTAL"] || "loading"}</div>
@@ -136,9 +133,9 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="col-12 md:col-6 md:pr-6 md:pl-5 md:pb-5">
-            <div className="background-primary border-primary p-3 border-1 border-50 border-round">
-              <div className="flex justify-content-between mb-3">
+          <div className="col-12 md:col-6 md:pr-6 md:pl-3 md:pb-5">
+            <div className="background-primary border-primary p-3 md:p-5 border-1 border-50 border-round-3xl">
+              <div className="flex justify-content-between">
                 <div>
                   <span className="block text-500 font-medium mb-3">Active Stakes (CELO)</span>
                   <div className="text-900 font-medium text-xl">{data["celo"]["activeStakes"]}</div>
@@ -149,9 +146,9 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="col-12 md:col-6 md:pl-6 md:pr-5 md:pb-5">
-            <div className="background-primary border-primary p-3 border-1 border-50 border-round">
-              <div className="flex justify-content-between mb-3">
+          <div className="col-12 md:col-6 md:pl-6 md:pr-3 md:pb-5">
+            <div className="background-primary border-primary p-3 md:p-5 border-1 border-50 border-round-3xl">
+              <div className="flex justify-content-between">
                 <div>
                   <span className="block text-500 font-medium mb-3">Staked TAL (MATIC)</span>
                   <div className="text-900 font-medium text-xl">{data["matic"]["stakedTAL"] || "loading"}</div>
@@ -162,9 +159,9 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="col-12 md:col-6 md:pr-6 md:pl-5 md:pb-5">
-            <div className="background-primary border-primary p-3 border-1 border-50 border-round">
-              <div className="flex justify-content-between mb-3">
+          <div className="col-12 md:col-6 md:pr-6 md:pl-3 md:pb-5">
+            <div className="background-primary border-primary p-3 md:p-5 border-1 border-50 border-round-3xl">
+              <div className="flex justify-content-between">
                 <div>
                   <span className="block text-500 font-medium mb-3">Active Stakes (MATIC)</span>
                   <div className="text-900 font-medium text-xl">{data["matic"]["activeStakes"]}</div>
@@ -186,7 +183,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <footer className="flex justify-content-between p-2 md:p-6 border-top-1 border-light">
+        <footer className="flex justify-content-between p-2 md:p-6 border-top-1 border-primary -mx-2">
           <div className="flex-column">
             <h2 className="text-light">Talent Protocol</h2>
             <p className="line-height-2">The web3 professional community<br/>for high-potential builders.</p>
