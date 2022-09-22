@@ -176,11 +176,11 @@ export default function Home() {
             </div>
           </div>
           <div className="col-12">
-            <div className="col-12 md:col-6 md:pl-6 md:pr-5">
+            <div className="col-12 md:col-6 md:pl-6">
               <p className="text-light">Staked TAL</p>
               <p className="text-sm line-height-2">The amount of TAL being staked in each chain. This corresponds to TAL bought by users and TAL distributed as rewards already.</p>
             </div>
-            <div className="col-12 md:col-6 md:pr-6 md:pl-5">
+            <div className="col-12 md:col-6 md:pl-6">
               <p className="text-light">Active Stakes</p>
               <p className="text-sm line-height-2">The amount of Talent/Supporter pairs that exist in each chain. Each pair was created through the purchase of talent tokens.</p>
             </div>
