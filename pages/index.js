@@ -186,7 +186,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <footer className="flex justify-content-between p-6 border-top-1 border-light">
+        <footer className="flex justify-content-between p-2 md:p-6 border-top-1 border-light">
           <div className="flex-column">
             <h2 className="text-light">Talent Protocol</h2>
             <p className="line-height-2">The web3 professional community<br/>for high-potential builders.</p>
