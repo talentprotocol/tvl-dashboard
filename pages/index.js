@@ -172,21 +172,21 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="col-12">
-            <div className="col-12 md:col-6 md:pl-6">
+          <div className="col-12 flex flex-wrap">
+            <div className="col-12 md:col-6 md:pl-6 md:pr-3">
               <p className="text-light">Staked TAL</p>
-              <p className="text-sm line-height-2">The amount of TAL being staked in each chain. This corresponds to TAL bought by users and TAL distributed as rewards already.</p>
+              <p className="text-sm line-height-3">The amount of TAL being staked in each chain. This corresponds to TAL bought by users and TAL distributed as rewards already.</p>
             </div>
-            <div className="col-12 md:col-6 md:pl-6">
+            <div className="col-12 md:col-6 md:pr-6 md:pl-3">
               <p className="text-light">Active Stakes</p>
-              <p className="text-sm line-height-2">The amount of Talent/Supporter pairs that exist in each chain. Each pair was created through the purchase of talent tokens.</p>
+              <p className="text-sm line-height-3">The amount of Talent/Supporter pairs that exist in each chain. Each pair was created through the purchase of talent tokens.</p>
             </div>
           </div>
         </div>
         <footer className="flex justify-content-between p-2 md:p-6 border-top-1 border-primary -mx-2">
           <div className="flex-column">
             <h2 className="text-light">Talent Protocol</h2>
-            <p className="line-height-2">The web3 professional community<br/>for high-potential builders.</p>
+            <p className="line-height-3">The web3 professional community<br/>for high-potential builders.</p>
           </div>
           <div className="flex-column">
             <h3 className="text-light text-right">Project</h3>
