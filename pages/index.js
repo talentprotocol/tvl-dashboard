@@ -81,7 +81,7 @@ export default function Home() {
       </Head>
 
       <main className="flex-column">
-        <div className="flex justify-content-center align-items-center p-2 background-primary border-bottom-1 border-primary -mx-2">
+        <div className="flex p-2 md:px-6 background-primary border-bottom-1 border-primary -mx-2">
           <ul className="flex" style={{paddingInlineStart: 0}}>
             {menubarItems.map((item) => (
               <li className="mx-3" key={`menuitem-${item.label}`}>
