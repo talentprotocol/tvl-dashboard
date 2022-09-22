@@ -97,8 +97,8 @@ export default function Home() {
           </ul>
         </div>
         <div className="grid my-4 md:my-8">
-          <div className="col-12 md:col-6 md:pl-6">
-            <div className="surface-0 shadow-2 p-3 border-1 border-50 border-round">
+          <div className="col-12 md:col-6 md:pl-6 md:pr-5 md:pb-5">
+            <div className="background-primary border-primary p-3 border-1 border-50 border-round">
               <div className="flex justify-content-between mb-3">
                 <div>
                   <span className="block text-500 font-medium mb-3">Total Value Locked</span>
@@ -110,8 +110,8 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="col-12 md:col-6 md:pr-6">
-            <div className="surface-0 shadow-2 p-3 border-1 border-50 border-round">
+          <div className="col-12 md:col-6 md:pr-6 md:pl-5 md:pb-5">
+            <div className="background-primary border-primary p-3 border-1 border-50 border-round">
               <div className="flex justify-content-between mb-3">
                 <div>
                   <span className="block text-500 font-medium mb-3">Total Active Stakes</span>
@@ -123,8 +123,8 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="col-12 md:col-6 md:pl-6">
-            <div className="surface-0 shadow-2 p-3 border-1 border-50 border-round">
+          <div className="col-12 md:col-6 md:pl-6 md:pr-5 md:pb-5">
+            <div className="background-primary border-primary p-3 border-1 border-50 border-round">
               <div className="flex justify-content-between mb-3">
                 <div>
                   <span className="block text-500 font-medium mb-3">Staked TAL (CELO)</span>
@@ -136,8 +136,8 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="col-12 md:col-6 md:pr-6">
-            <div className="surface-0 shadow-2 p-3 border-1 border-50 border-round">
+          <div className="col-12 md:col-6 md:pr-6 md:pl-5 md:pb-5">
+            <div className="background-primary border-primary p-3 border-1 border-50 border-round">
               <div className="flex justify-content-between mb-3">
                 <div>
                   <span className="block text-500 font-medium mb-3">Active Stakes (CELO)</span>
@@ -149,8 +149,8 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="col-12 md:col-6 md:pl-6">
-            <div className="surface-0 shadow-2 p-3 border-1 border-50 border-round">
+          <div className="col-12 md:col-6 md:pl-6 md:pr-5 md:pb-5">
+            <div className="background-primary border-primary p-3 border-1 border-50 border-round">
               <div className="flex justify-content-between mb-3">
                 <div>
                   <span className="block text-500 font-medium mb-3">Staked TAL (MATIC)</span>
@@ -162,8 +162,8 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="col-12 md:col-6 md:pr-6">
-            <div className="surface-0 shadow-2 p-3 border-1 border-50 border-round">
+          <div className="col-12 md:col-6 md:pr-6 md:pl-5 md:pb-5">
+            <div className="background-primary border-primary p-3 border-1 border-50 border-round">
               <div className="flex justify-content-between mb-3">
                 <div>
                   <span className="block text-500 font-medium mb-3">Active Stakes (MATIC)</span>
@@ -175,14 +175,14 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="col-12 md:px-6">
-            <div className="col-12 flex flex-wrap justify-content-between">
-              <p className="col-12 md:col-6 md:text-right text-light">Staked TAL</p>
-              <p className="col-12 md:col-6 md:text-left text-sm line-height-2">The amount of TAL being staked in each chain. This corresponds to TAL bought by users and TAL distributed as rewards already.</p>
+          <div className="col-12">
+            <div className="col-12 md:col-6 md:pl-6 md:pr-5">
+              <p className="text-light">Staked TAL</p>
+              <p className="text-sm line-height-2">The amount of TAL being staked in each chain. This corresponds to TAL bought by users and TAL distributed as rewards already.</p>
             </div>
-            <div className="col-12 flex flex-wrap justify-content-between">
-              <p className="col-12 md:col-6 md:text-right text-light">Active Stakes</p>
-              <p className="col-12 md:col-6 md:text-left text-sm line-height-2">The amount of Talent/Supporter pairs that exist in each chain. Each pair was created through the purchase of talent tokens.</p>
+            <div className="col-12 md:col-6 md:pr-6 md:pl-5">
+              <p className="text-light">Active Stakes</p>
+              <p className="text-sm line-height-2">The amount of Talent/Supporter pairs that exist in each chain. Each pair was created through the purchase of talent tokens.</p>
             </div>
           </div>
         </div>
@@ -192,7 +192,7 @@ export default function Home() {
             <p className="line-height-2">The web3 professional community<br/>for high-potential builders.</p>
           </div>
           <div className="flex-column">
-            <h3 className="text-light">Project</h3>
+            <h3 className="text-light text-right">Project</h3>
             <ul className='flex-column justify-content-end' style={{paddingInlineStart: 0}}>
               <li className='mt-2 text-right'>
                 <a href={"https://talentprotocol.notion.site/Detailed-Token-Economics-916806c9811b4cabb54bba3a0afc3dd4"} className="text-white">

@@ -10,8 +10,9 @@
   font-weight: bold;
 }
 
-body {
+html,body {
   font-family: "AcidGrotesk";
+  background-color: #131415 !important;
 }
 
 .text-primary {
@@ -30,6 +31,10 @@ body {
 
 .border-light {
   border-color: #eaffd966 !important;
+}
+
+.border-primary {
+  border-color: #3B3C3F !important;
 }
 
 .background-primary {
