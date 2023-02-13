@@ -68,23 +68,42 @@ export default function Home() {
     {
       label: 'Talent Protocol',
       url: "https://talentprotocol.com/",
-      textClassName: "text-primary font-bold"
-    }
+      textClassName: "text-primary font-bold",
+      listClassName: "md:mr-auto px-3 pb-3 md:pb-0"
+    },
+    {
+      label: 'Season 3 KPIs',
+      url: "#season3",
+      textClassName: "text-primary font-bold",
+      listClassName: "py-3 md:py-0 px-3"
+    },
+    {
+      label: 'Metrics',
+      url: "#metrics",
+      textClassName: "text-primary font-bold",
+      listClassName: "py-3 md:py-0 px-3"
+    },
+    {
+      label: 'Live TVL',
+      url: "#tvl",
+      textClassName: "text-primary font-bold",
+      listClassName: "pt-3 md:pt-0 px-3"
+    },
   ];
 
   return (
     <>
       <Head>
-        <title>Talent Protocol TVL</title>
-        <meta name="description" content="Talent Protocol Metrics" />
+        <title>Talent Protocol Growth</title>
+        <meta name="description" content="Talent Protocol Growth Metrics" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className="flex-column">
-        <div className="flex p-2 md:px-6 background-primary border-bottom-1 border-primary -mx-2">
-          <ul className="flex" style={{paddingInlineStart: 0}}>
+        <div className="p-2 md:px-6 background-primary -mx-2">
+          <ul className="flex flex-column md:flex-row" style={{paddingInlineStart: 0}}>
             {menubarItems.map((item) => (
-              <li className="mx-3" key={`menuitem-${item.label}`}>
+              <li className={item.listClassName} key={`menuitem-${item.label}`}>
                 {item.url && <a href={item.url} className={item.textClassName}>
                   <span className={item.textClassName}>{item.label}</span>
                 </a>}
@@ -93,7 +112,25 @@ export default function Home() {
             ))}
           </ul>
         </div>
-        <div className="grid my-4 md:my-8">
+        <div className="border-bottom-1 border-primary w-screen -mx-2"></div>
+        <div className="grid my-4 md:-mx-2 mx-1">
+          <div className="col-12 md:pl-6 md:pr-6 pb-5">
+            <h2 className="text-primary font-bold mb-5" id="season3">Season 3 KPIs Dashboard</h2>
+            <iframe className="md:h-screen h-20rem w-full" src="https://lookerstudio.google.com/embed/reporting/58b500de-b07a-43ff-92d5-32b482e25026/page/p_85kjfsvc2c" frameBorder="0" allowFullScreen></iframe>
+          </div>
+        </div>
+        <div className="border-bottom-1 border-primary w-screen -mx-2"></div>
+        <div className="grid my-4 md:-mx-2 mx-1">
+          <div className="col-12 md:pl-6 md:pr-6 pb-5">
+            <h2 className="text-primary font-bold mb-5" id="metrics">Metrics</h2>
+            <iframe className="md:h-screen h-20rem w-full" src="https://lookerstudio.google.com/embed/reporting/bc8d8c23-b749-41fe-a931-c60037b25841/page/p_85kjfsvc2c"  frameBorder="0" allowFullScreen></iframe>
+          </div>
+        </div>
+        <div className="border-bottom-1 border-primary w-screen -mx-2"></div>
+        <div className="grid my-4 md:-mx-2 mx-1">
+          <div className="col-12 md:pl-6">
+            <h2 className="text-primary font-bold" id="tvl">Live TVL</h2>
+          </div>
           <div className="col-12 md:col-6 md:pl-6 md:pr-3 md:pb-5">
             <div className="background-primary border-primary p-3 md:p-5 border-1 border-50 border-round-3xl">
               <div className="flex justify-content-between">
@@ -183,7 +220,8 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <footer className="flex justify-content-between p-2 md:p-6 border-top-1 border-primary -mx-2">
+        <div className="border-bottom-1 border-primary w-screen -mx-2"></div>
+        <footer className="flex justify-content-between p-2 md:p-6 md:-mx-2 mx-1">
           <div className="flex-column">
             <h2 className="text-light">Talent Protocol</h2>
             <p className="line-height-3">The web3 professional community<br/>for high-potential builders.</p>
@@ -214,7 +252,6 @@ export default function Home() {
             </ul>
           </div>
         </footer>
-
       </main>
     </>
   )
