@@ -19,7 +19,7 @@ export default function Home() {
 
     const maticProvider = new CeloProvider("https://polygon-rpc.com/");
     const maticContract = new ethers.Contract(
-      "0xE23104E89fF4c93A677136C4cBdFD2037B35BE67",
+      "0xEa998Ff9c0c075cD035b25095D1833E5aF0aF873",
       StakingMigrationABI.abi,
       maticProvider
     );
