@@ -72,8 +72,8 @@ export default function Home() {
       listClassName: "md:mr-auto px-3 pb-3 md:pb-0"
     },
     {
-      label: 'Season 3 KPIs',
-      url: "#season3",
+      label: 'Season 4 KPIs',
+      url: "#season4",
       textClassName: "text-primary font-bold",
       listClassName: "py-3 md:py-0 px-3"
     },
@@ -115,7 +115,7 @@ export default function Home() {
         <div className="border-bottom-1 border-primary w-screen -mx-2"></div>
         <div className="grid my-4 md:-mx-2 mx-1">
           <div className="col-12 md:pl-6 md:pr-6 pb-5">
-            <h2 className="text-primary font-bold mb-5" id="season3">Season 3 KPIs Dashboard</h2>
+            <h2 className="text-primary font-bold mb-5" id="season4">Season 4 KPIs Dashboard</h2>
             <iframe className="md:h-screen h-20rem w-full" src="https://lookerstudio.google.com/embed/reporting/58b500de-b07a-43ff-92d5-32b482e25026/page/p_85kjfsvc2c" frameBorder="0" allowFullScreen></iframe>
           </div>
         </div>
