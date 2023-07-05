@@ -230,22 +230,22 @@ export default function Home() {
             <h3 className="text-light text-right">Project</h3>
             <ul className='flex-column justify-content-end' style={{paddingInlineStart: 0}}>
               <li className='mt-2 text-right'>
-                <a href={"https://talentprotocol.notion.site/Detailed-Token-Economics-916806c9811b4cabb54bba3a0afc3dd4"} className="text-white">
+                <a target="_blank" href={"https://talentprotocol.notion.site/Detailed-Token-Economics-916806c9811b4cabb54bba3a0afc3dd4"} className="text-white">
                   <span>Tokenomics</span>
                 </a>
               </li>
               <li className='mt-2 text-right'>
-                <a href={"https://talentprotocol.notion.site/Talent-Protocol-101-26a6c4b9f8284e5e8f55603a38629e76"} className="text-white">
+                <a target="_blank" href={"https://talentprotocol.notion.site/Talent-Protocol-2b10dc798a3941d5814bc10dfd102c25"} className="text-white">
                   <span>About</span>
                 </a>
               </li>
               <li className='mt-2 text-right'>
-                <a href={"https://blog.talentprotocol.com/"} className="text-white">
+                <a target="_blank" href={"https://blog.talentprotocol.com/"} className="text-white">
                   <span>Blog</span>
                 </a>
               </li>
               <li className='mt-2 text-right'>
-                <a href={"https://help.talentprotocol.com/"} className="text-white">
+                <a target="_blank" href={"https://help.talentprotocol.com/"} className="text-white">
                   <span>FAQ</span>
                 </a>
               </li>
