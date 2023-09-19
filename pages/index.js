@@ -23,26 +23,6 @@ const TALENT_PROTOCOL_GITHUB = "https://github.com/talentprotocol";
 const TALENT_PROTOCOL_TELEGRAM = "https://t.me/talentprotocol";
 
 export default function Home() {
-  const menubarItems = [
-    {
-      label: 'Talent Protocol',
-      url: "https://talentprotocol.com/",
-      textClassName: "text-primary font-bold",
-      listClassName: "md:mr-auto px-3 pb-3 md:pb-0"
-    },
-    {
-      label: 'Season 4 KPIs',
-      url: "#season4",
-      textClassName: "text-primary font-bold",
-      listClassName: "py-3 md:py-0 px-3"
-    },
-    {
-      label: 'Metrics',
-      url: "#metrics",
-      textClassName: "text-primary font-bold",
-      listClassName: "py-3 md:py-0 px-3"
-    },
-  ];
 
   return (
     <>
@@ -52,34 +32,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="flex-column">
-        <div className="p-2 md:px-6 background-primary -mx-2">
-          <ul className="flex flex-column md:flex-row" style={{paddingInlineStart: 0}}>
-            {menubarItems.map((item) => (
-              <li className={item.listClassName} key={`menuitem-${item.label}`}>
-                {item.url && <a href={item.url} className={item.textClassName}>
-                  <span className={item.textClassName}>{item.label}</span>
-                </a>}
-                {!item.url && <span className={item.textClassName}>{item.label}</span>}
-              </li>
-            ))}
-          </ul>
-        </div>
-        <div className="border-bottom-1 border-primary w-screen -mx-2"></div>
-        <div className="grid my-4 md:-mx-2 mx-1">
-          <div className="col-12 md:pl-6 md:pr-6 pb-5">
-            <h2 className="text-primary font-bold mb-5" id="season4">Season 4 KPIs Dashboard</h2>
-            <iframe className="md:h-screen h-20rem w-full" src="https://lookerstudio.google.com/embed/reporting/58b500de-b07a-43ff-92d5-32b482e25026/page/p_85kjfsvc2c" frameBorder="0" allowFullScreen></iframe>
-          </div>
-        </div>
-        <div className="border-bottom-1 border-primary w-screen -mx-2"></div>
-        <div className="grid my-4 md:-mx-2 mx-1">
-          <div className="col-12 md:pl-6 md:pr-6 pb-5">
-            <h2 className="text-primary font-bold mb-5" id="metrics">Metrics</h2>
-            <iframe className="md:h-screen h-20rem w-full" src="https://lookerstudio.google.com/embed/reporting/bc8d8c23-b749-41fe-a931-c60037b25841/page/p_85kjfsvc2c"  frameBorder="0" allowFullScreen></iframe>
-          </div>
-        </div>
-        <div className="border-bottom-1 border-primary w-screen -mx-2"></div>
+        <iframe className="h-screen w-screen" src="https://lookerstudio.google.com/embed/reporting/fb394479-d363-433a-bb1c-52cfcb457865/page/p_cuhzqo9h7c" allowFullScreen></iframe>
         <footer className="flex justify-content-between p-2 md:p-6 md:-mx-2 mx-1">
           <div className="flex-column">
             <h2 className="text-light">Talent Protocol</h2>
@@ -158,7 +111,6 @@ export default function Home() {
             </div>
           </div>
         </footer>
-      </main>
     </>
   )
 }
