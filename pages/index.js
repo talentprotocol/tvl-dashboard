@@ -32,7 +32,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-        <iframe className="h-screen w-screen" src="https://lookerstudio.google.com/embed/reporting/fb394479-d363-433a-bb1c-52cfcb457865/page/p_cuhzqo9h7c" allowFullScreen></iframe>
+        <iframe className="h-screen w-screen" src="https://lookerstudio.google.com/embed/reporting/b7659ced-0b4c-4633-928e-7b67e95e1a71/page/p_cuhzqo9h7c" allowFullScreen></iframe>
         <footer className="flex justify-content-between p-2 md:p-6 md:-mx-2 mx-1">
           <div className="flex-column">
             <h2 className="text-light">Talent Protocol</h2>
